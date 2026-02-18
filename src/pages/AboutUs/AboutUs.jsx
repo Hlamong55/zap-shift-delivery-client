@@ -104,7 +104,7 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-20">
+    <div className="max-w-7xl mx-auto bg-white px-10 py-20">
       {/* Heading */}
       <h1 className="text-6xl font-extrabold text-secondary mb-4">About Us</h1>
       <p className="text-gray-600 text-lg font-medium max-w-3xl">
