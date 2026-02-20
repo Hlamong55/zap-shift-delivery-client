@@ -17,6 +17,7 @@ import PaymentCancelled from "../pages/Dashboard/Payment/PaymentCancelled";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 import ApproveRiders from "../pages/Dashboard/ApproveRiders/ApproveRiders";
 import UsersManagement from "../pages/Dashboard/UsersManagement/UsersManagement";
+import NotFound from "../pages/404-Error/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -101,5 +102,9 @@ export const router = createBrowserRouter([
         element: <UsersManagement></UsersManagement>
       }
     ]
+  },
+  {
+    path: "*",
+    element: <NotFound></NotFound>
   }
 ]);
