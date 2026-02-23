@@ -2,11 +2,12 @@ import React from "react";
 import { FaMotorcycle, FaUsers } from "react-icons/fa";
 import { MdOutlineCreditScore } from "react-icons/md";
 import { Link, Outlet } from "react-router";
-import UseRole from "../context/AuthContext/UseRole";
+import useRole from "../hooks/useRole";
+
 
 const DashboardLayout = () => {
 
-  const {role} = UseRole();
+  const {role} = useRole();
 
   return (
     <div className="drawer lg:drawer-open max-w-7xl mx-auto">
