@@ -3,7 +3,7 @@ import { FaLock, FaHome } from "react-icons/fa";
 
 const Forbidden = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-red-600 via-pink-600 to-purple-700 text-white relative overflow-hidden">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-linear-to-br from-red-600 via-pink-600 to-purple-700 text-white relative overflow-hidden">
 
       {/* Animated Background Circles */}
       <div className="absolute w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse top-10 left-10"></div>

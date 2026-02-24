@@ -3,8 +3,8 @@ import useAuth from '../hooks/useAuth';
 import useRole from '../hooks/useRole';
 import Forbidden from '../components/Forbidden/Forbidden';
 
-const AdminRoute = () => {
-    const { user, loading } = useAuth();
+const AdminRoute = ({ children }) => {
+    const { loading } = useAuth();
     const { role, roleLoading } = useRole();
 
     if (loading || roleLoading) {
@@ -23,11 +23,7 @@ const AdminRoute = () => {
     return <Forbidden></Forbidden>
    }
 
-    return (
-        <div>
-            
-        </div>
-    );
+    return children;
 };
 
 export default AdminRoute;
