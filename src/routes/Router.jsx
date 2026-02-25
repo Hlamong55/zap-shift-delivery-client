@@ -96,7 +96,9 @@ export const router = createBrowserRouter([
       },
       {
         path: "approve-riders",
-        element: <ApproveRiders></ApproveRiders>
+        element: <AdminRoute>
+          <ApproveRiders></ApproveRiders>
+        </AdminRoute>
       },
       {
         path: "users-manage",
