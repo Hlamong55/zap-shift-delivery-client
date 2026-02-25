@@ -29,7 +29,7 @@ const UsersManagement = () => {
     if (result.isConfirmed) {
       const roleInfo = { role: "Admin" };
 
-      axiosSecure.patch(`/users/${user._id}`, roleInfo).then((res) => {
+      axiosSecure.patch(`/users/${user._id}/role`, roleInfo).then((res) => {
         if (res.data.modifiedCount) {
           refetch();
           Swal.fire({
@@ -58,7 +58,7 @@ const UsersManagement = () => {
     if (result.isConfirmed) {
       const roleInfo = { role: "user" };
 
-      axiosSecure.patch(`/users/${user._id}`, roleInfo).then((res) => {
+      axiosSecure.patch(`/users/${user._id}/role`, roleInfo).then((res) => {
         if (res.data.modifiedCount) {
           refetch();
           Swal.fire({
