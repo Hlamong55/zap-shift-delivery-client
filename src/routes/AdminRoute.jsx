@@ -19,7 +19,7 @@ const AdminRoute = ({ children }) => {
     );
    }
 
-   if(role !== "admin"){
+   if(role !== "Admin"){
     return <Forbidden></Forbidden>
    }
 
