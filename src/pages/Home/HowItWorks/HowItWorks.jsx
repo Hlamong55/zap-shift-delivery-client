@@ -31,7 +31,8 @@ const HowItWorks = () => {
   return (
     <section className="py-20">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-secondary">How it Works</h2>
+        <h2 className="text-4xl font-bold  text-secondary text-center">How it Works</h2>
+        <h3 className="text-center mb-6 text-lg font font-medium text-secondary">From order to doorstep — simple and seamless.</h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((item, index) => (
