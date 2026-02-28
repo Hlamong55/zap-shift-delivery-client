@@ -16,13 +16,13 @@ import { Autoplay } from "swiper/modules";
 
 const brandLogos = [
   amazon,
-  amzVector,
   casio,
   moonstar,
+  amzVector,
+  dhl,
   randstad,
   star,
   startProple,
-  dhl,
   // fedx,
   blue
 ];
